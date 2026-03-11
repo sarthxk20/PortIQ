@@ -104,5 +104,5 @@ MIT License — free to use, modify, and distribute.
 
 ## 🙋 Author
 
-Built by a **SaaS GTM Strategist** focused on Digital Supply Chain Transformation.  
+Built by a **Sarthak Shandilya** focused on Digital Supply Chain Transformation.  
 Connect on [LinkedIn](https://linkedin.com) · [GitHub](https://github.com)
