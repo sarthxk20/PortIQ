@@ -370,11 +370,6 @@ def simulate_quarterly_trends(df_master, seed: int = 42):
             })
     return pd.DataFrame(records)
 
-
-# ─────────────────────────────────────────────────────────────────────────────
-# PDF GENERATOR
-# ─────────────────────────────────────────────────────────────────────────────
-
 # ─────────────────────────────────────────────────────────────────────────────
 # TRADE LANE MAP (matplotlib-based world map)
 # ─────────────────────────────────────────────────────────────────────────────
@@ -861,7 +856,7 @@ with tab_ml:
             ax.text(val+0.001, i, f"{val:.3f}", va="center", fontsize=8)
         st.pyplot(fig, use_container_width=True); plt.close()
 
-        with st.expander("Plain English: what do these features mean?"):
+        with st.expander("What do these features mean?"):
             for feat in clf_feat_imp.head(top_n).index:
                 st.markdown(f"**`{feat}`** — {FEATURE_EXPLANATIONS.get(feat,'')}")
 
