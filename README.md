@@ -96,6 +96,25 @@ streamlit run app.py
 
 ---
 
+## Experiment Tracking
+
+This project uses [MLflow](https://mlflow.org) to track model experiments, 
+log parameters, metrics, and model artefacts.
+
+To run the training pipeline with experiment tracking:
+```bash
+pip install mlflow
+python train.py
+mlflow ui
+```
+
+Then open http://localhost:5000 to view the MLflow experiment dashboard.
+
+Tracked metrics per run:
+- `cv_auc_mean` — mean AUC across 5-fold cross-validation
+- `cv_auc_std` — standard deviation across folds
+- `test_auc` — AUC on held-out test set
+
 ## 📄 License
 
 MIT License — free to use, modify, and distribute.
